@@ -15,9 +15,9 @@ Declare one classe name `Car` in package
 
 Voiture's class must have 3 attributs : 
 
-    - nbDoor : private
-    - color : mutable
-    - nbPlaces : immutable
+    - nbDoor - Int : private
+    - color - String : mutable
+    - nbPlaces - Int : immutable
     
     
 ### 2) Second constructor
@@ -32,15 +32,25 @@ Here, we are going to add two methods :
 
         speedUp : one parameter will indicate the number of km/h that the speed  of the car will be increase, parameter
          must be exclusively positive
-        if not, throw an `IllegalArgumentException`. Method returns the new speed of the car
+        if not, throw an `IllegalArgumentException`. Method returns Unit
     
     
         brake : One parameter will indicate the number of km/h that the speed of the car will be decrease,
-         parameter must be exclusively negative if not, throw an IllegalArgumentException. Method returns the new speed of the car
+         parameter must be exclusively negative if not, throw an IllegalArgumentException. Method returns Unit
          
-   *(Speed must be hold internally in mutable variable)*
+   *(Speed must be hold internally in mutable variable and readable from outside the class)*
    
-## first Summary
+### 4) Start your car
+
+
+Create one runnable class. 
+Instanciate one car, with primary constructor and after one with secondary constructor
+
+Drive your cars, accelerate, brake, check speed... test error cases also. 
+
+
+   
+## summary
 
 Here we saw how create one class in Scala language and how declare some methods. In this implemetation,
 we used the object oriented paradigm by used the exception and used the mutable internal state. 
