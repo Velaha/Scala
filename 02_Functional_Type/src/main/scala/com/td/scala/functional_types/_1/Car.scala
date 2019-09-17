@@ -1,4 +1,4 @@
-package com.td.scala.functional_types
+package com.td.scala.functional_types._1
 
 class Car(nbDoor: Int, var color: String, val nbPlaces: Int, var speed: Int = 0) {
 

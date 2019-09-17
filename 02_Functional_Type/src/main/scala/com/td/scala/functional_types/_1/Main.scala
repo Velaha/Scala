@@ -1,4 +1,4 @@
-package com.td.scala.functional_types
+package com.td.scala.functional_types._1
 
 object Main extends App {
 
