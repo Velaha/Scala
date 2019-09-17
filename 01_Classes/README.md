@@ -18,6 +18,7 @@ Voiture's class must have 3 attributs :
     - nbDoor - Int : private
     - color - String : mutable
     - nbPlaces - Int : immutable
+    - speed - Int : mutable (default value = 0)
     
     
 ### 2) Second constructor
