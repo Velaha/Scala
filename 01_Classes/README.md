@@ -2,8 +2,8 @@
 
 ## Purpose
 
-This first exercice will help you to get more familiar with the basic creation of a _class_.
-It is a very short exercice, do it purely Object-oriented ("Java's style"), we will iterate on it in the following exercices.
+This first exercise will help you to get more familiar with the basic creation of a _class_.
+It is a very short exercise, do it purely Object-oriented ("Java's style"), we will iterate on it in the following exercise.
 
 ## Todo : 
 
@@ -14,7 +14,7 @@ Declare one class name `Car` in package
     com.td.scala.classes
 
 
-Voiture's class must have 3 attributs : 
+The class _Car_ must have 3 attributes : 
 
     - nbDoor - Int : private
     - color - String : mutable
@@ -46,13 +46,13 @@ Here, we are going to add two methods :
 
 
 Create one runnable class. 
-Instanciate one car, with primary constructor and after one with secondary constructor
+Instantiate one car, with primary constructor and after one with secondary constructor
 
 Drive your cars, accelerate, brake, check speed... test error cases also. 
 
  
-## summary
+## Summary
 
-Here we saw how create one class in Scala language and how declare some methods. In this implemetation,
+Here we saw how create one class in Scala language and how declare some methods. In this implementation,
 we used the object oriented paradigm by used the exception and used the mutable internal state. 
-Next exercice will show you how we can change our approach and be more functional
+Next exercise will show you how we can change our approach and be more functional.
