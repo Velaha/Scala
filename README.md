@@ -21,7 +21,7 @@ When sbt console is loaded, run the following command :
 
     project 01_intro
 
-and run your first programm: 
+and run your first program: 
 
     run
     
@@ -33,4 +33,6 @@ The following message should appear in the console :
     [success] Total time: 1 s, completed Sep 17, 2019 12:32:47 AM
     
 From now you are ready !
+
+*Tips : to see all available modules, used : `sbt projects` 
 

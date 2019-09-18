@@ -10,16 +10,22 @@ Exercice aims to dive in functions (simple, hight order functions, etc)
 
 ### 1) Format things!
 
-Here, we are going to implement some functions that aim to format Car to be display 
+Here, we have to implement some functions, In the the following object : 
+
+    com.td.scala.functions.CarUtilities
+
+You will find some functions' signatures that you have to implement according to short spec above 
 
      
     
-### 2) Master word : Pure
+### 2) HOF will help you for composition
 
+Once you implemented whole of functions, go in Main class and implement pieces of code that correspond to each description.
 
- 
-   
 ## Summary
+
+Here, we played with Hight Order function concept and composition in Scala. Those are a keys concepts in functional programming.
+Shorts examples should open a new way of thinking when you will design et organise your code in your future project
 
 
 
