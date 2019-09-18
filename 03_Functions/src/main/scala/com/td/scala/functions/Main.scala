@@ -1,12 +1,11 @@
 package com.td.scala.functions
 
-
 object Main extends App {
 
-  println("Prepare caracteristic sheets (technical) for all green car")
+  println("Prepare characteristic sheets (technical) for all green car")
 
 
-  println("Prepare caracteristic sheets (showroom) for all pink car")
+  println("Prepare characteristic sheets (showroom) for all pink car")
 
 
   println(
@@ -15,13 +14,9 @@ object Main extends App {
       |""".stripMargin)
 
 
-
   println(
     """Build a standard car that embeded a turbo that make it the luxurious car in the world
       |when the driver speed up, its speed rise up by 2 times
       |""".stripMargin)
-
-
-
 
 }

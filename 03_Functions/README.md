@@ -1,31 +1,24 @@
-# Functionnal types
+# Functions
 
 ## Purpose
 
-Exercice aims to dive in functions (simple, hight order functions, etc) 
+This exercise aims to dive in functions (simple, higher-order functions, etc) 
 
-## Todo :
+## Todo
 
-*To reach our objective, you will find an new implementation of Car's class in the package with new features*  
+*To reach our objective, you will find an new implementation of the class Car in the package with new features*  
 
 ### 1) Format things!
 
-Here, we have to implement some functions, In the the following object : 
-
-    com.td.scala.functions.CarUtilities
-
-You will find some functions' signatures that you have to implement according to short spec above 
-
-     
+    > Implement the signatures in `com.td.scala.functions.CarUtilities`
     
 ### 2) HOF will help you for composition
 
-Once you implemented whole of functions, go in Main class and implement pieces of code that correspond to each description.
+    > Once you've implemented all of the functions,
+    implement the missing code that correspond to each description
+    in class `Main`
 
 ## Summary
 
-Here, we played with Hight Order function concept and composition in Scala. Those are a keys concepts in functional programming.
-Shorts examples should open a new way of thinking when you will design et organise your code in your future project
-
-
-
+Here, we used Higher-Order functions and composition in Scala. Those are a keys concepts in functional programing.
+These shorts examples should open a new way of thinking when you will design et organize your code in your future project.
