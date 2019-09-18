@@ -2,7 +2,7 @@ package com.td.scala.functional_types._1
 
 object Main extends App {
 
-
+  println("Improve code of Car's class to make thing more functional")
   val car1 = new Car(3, "white", 4)
 
   println(car1.color)
@@ -14,7 +14,5 @@ object Main extends App {
   car1.brake(-8)
 
   println(car1.speed)
-
-
 
 }

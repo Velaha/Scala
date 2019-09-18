@@ -1,6 +1,6 @@
-package com.td.scala.functional_types._2.constructor
+package com.td.scala.functions.constructor
 
-import com.td.scala.functional_types._2.Car
+import com.td.scala.functions.Car
 
 object CarConstructor {
 
@@ -56,5 +56,7 @@ object CarConstructor {
   def searchCarById(code: Int): Option[Car] = garage.get(code)
 
   def searchCarsByColor(c: Color): List[Car] = garage.filter { case (i, car) => car.color == c }.values.toList
+
+  def technicalSheet(cars: List[Car], format: Car => String): List[String] = cars.map(format)
 
 }

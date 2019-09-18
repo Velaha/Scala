@@ -8,7 +8,7 @@ This move will be done by one refactoring of the Car class to introduce function
 
 ## Todo :
 
-*To reach our objective, you will find an implementation of Car class in the package*  
+*To reach our objective, you will find an implementation of Car's class in the package*  
 
 ### 1) Immutability is my friend
 
@@ -63,12 +63,28 @@ Modify signatures and implement them. Integrate the pattern matching to handle t
 ### 3) Car constructor
 
 
-In section, We will use other kind of functional type : Option
+In section, We will use others kind of functional type : Option, List
 
-On va maintenant produire et vendre des voitures. Dans le package garage, vous trouverez une implémentation vide d'un constructeur de voiture. 
-L'idée est de pouvoir rechercher des voitures dans le ga
+    Info : We have modified the Car's signature. We replaced the `color:String` by a real type Color. 
+    Currently we don't dive in details about this type.
+    
+Utility class CarConstructor is available in constructor's package.
+
+In this exercice, you will search some specific car by its id (from 1 to 7). 
+
+Once you found the Car, display the color of the car. 
+Find a way to avoid any crash when Car isn't found (pattern matching, fold, etc..)
+
+Now we looking for some Cars with the same color. 
+Once you found some Car (or not), compute the whole number of places available.
+Find a way to avoid any crash when Car isn't found (pattern matching, fold, etc..)
  
-
    
-## summary
+## Summary
+
+In this section, you learned how make your code more functional by make thing immutable, typed (and without any exceptions).
+Also, you worked with some functional types that allows you to describe what you want to do instead of write it (execution flow)
+
+
+
 

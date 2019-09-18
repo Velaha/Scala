@@ -1,11 +1,11 @@
-package com.td.scala.functional_types
+package com.td.scala.functional_types._2
 
 import com.td.scala.functional_types._2.constructor.CarConstructor
 
 
 object Main extends App {
 
-  CarConstructor.searchCar(2)
+  println("Implements here several kind of searchs")
 
 
 }

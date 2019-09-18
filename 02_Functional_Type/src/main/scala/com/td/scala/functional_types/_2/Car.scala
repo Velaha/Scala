@@ -1,9 +1,11 @@
 package com.td.scala.functional_types._2
 
-class Car(nbDoor: Int, val color: String, val nbPlaces: Int, val speed: Int = 0) {
+import com.td.scala.functional_types._2.constructor.CarConstructor.Color
+
+class Car(nbDoor: Int, val color: Color, val nbPlaces: Int, val speed: Int = 0) {
 
 
-  def this(color: String) {
+  def this(color: Color) {
     this(2, color, 2)
   }
 
