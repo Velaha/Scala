@@ -21,14 +21,7 @@ The class _Car_ must have 3 attributes :
     - nbPlaces - Int : immutable
     - speed - Int : mutable (default value = 0)
     
-    
-### 2) Second constructor
- 
-Modify Car's class to add second constructor that has only one parameter (color),
-others parameters must be initialized with defaults values (nbDoor:2 and nbPlaces: 2)
-    
-
-### 3) add methods 
+### 2) add methods 
 
 Here, we are going to add two methods :  
 
@@ -42,7 +35,7 @@ Here, we are going to add two methods :
          
    *(Speed must be hold internally in mutable variable and readable from outside the class)*
    
-### 4) Start your car
+### 3) Start your car
 
 
 Create one runnable class. 
@@ -55,4 +48,8 @@ Drive your cars, accelerate, brake, check speed... test error cases also.
 
 Here we saw how create one class in Scala language and how declare some methods. In this implementation,
 we used the object oriented paradigm by used the exception and used the mutable internal state. 
+<<<<<<< 9f2719ea1bf850834d8d2b0f2f85682b68ab0416
 Next exercise will show you how we can change our approach and be more functional.
+=======
+Next exercise will show you how we can change our approach and be more functional
+>>>>>>> remove secondary constructor
