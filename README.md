@@ -4,7 +4,7 @@ This project aims to help you to dive further into Scala language. Several exerc
 
 # Setup environment
 
-## install sbt
+## Install sbt
 First of all, you have to setup your environment to be able to run exercices.
 Only SBT is required for exercices. Please follow the process here to install it : 
 
@@ -36,3 +36,5 @@ From now you are ready !
 
 *Tips : to see all available modules, used : `sbt projects` 
 
+## Next
+Go to the next instructions `01_Classes/README.md`

@@ -2,8 +2,8 @@
 
 ## Purpose
 
-Exercice aims move from the oriented object paradigm to functional paradigm. 
-This move will be done by one refactoring of the Car class to introduce functional approach.
+This exercice aims to move from object-oriented to functional. 
+This will be done by one refactoring of the Car class to introduce functional approach.
  
 
 ## Todo :
@@ -19,8 +19,7 @@ The first step of our refactoring would be to enforce the immutability.
 Move all attributes from private/var to val declaration. 
 Now we are allowed to read all attribute from outside of the instance. 
 
-     
-    
+
 ### 2) Master word : Pure
 
 Currently implementation of both methods far from functional paradigm. why? 
@@ -84,7 +83,3 @@ Find a way to avoid any crash when Car isn't found (pattern matching, fold, etc.
 
 In this section, you learned how make your code more functional by make thing immutable, typed (and without any exceptions).
 Also, you worked with some functional types that allows you to describe what you want to do instead of write it (execution flow)
-
-
-
-

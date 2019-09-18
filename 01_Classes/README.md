@@ -2,13 +2,14 @@
 
 ## Purpose
 
-Exercice aims to be familiar with the basic class creation. Paradigm behind exercice is actually Object Oriented
+This first exercice will help you to get more familiar with the basic creation of a _class_.
+It is a very short exercice, do it purely Object-oriented ("Java's style"), we will iterate on it in the following exercices.
 
 ## Todo : 
 
 ### 1) First class 
 
-Declare one classe name `Car` in package 
+Declare one class name `Car` in package 
 
     com.td.scala.classes
 
@@ -31,7 +32,7 @@ others parameters must be initialized with defaults values (nbDoor:2 and nbPlace
 
 Here, we are going to add two methods :  
 
-        speedUp : one parameter will indicate the number of km/h that the speed  of the car will be increase, parameter
+        speedUp : one parameter will indicate the number of km/h that the speed of the car will be increase, parameter
          must be exclusively positive
         if not, throw an `IllegalArgumentException`. Method returns Unit
     
@@ -49,8 +50,7 @@ Instanciate one car, with primary constructor and after one with secondary const
 
 Drive your cars, accelerate, brake, check speed... test error cases also. 
 
-
-   
+ 
 ## summary
 
 Here we saw how create one class in Scala language and how declare some methods. In this implemetation,
