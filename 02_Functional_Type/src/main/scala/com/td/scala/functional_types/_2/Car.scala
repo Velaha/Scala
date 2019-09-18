@@ -4,11 +4,9 @@ import com.td.scala.functional_types._2.constructor.CarConstructor.Color
 
 class Car(nbDoor: Int, val color: Color, val nbPlaces: Int, val speed: Int = 0) {
 
-
   def this(color: Color) {
     this(2, color, 2)
   }
-
 
   def speedUp(s: Int): Either[String, Car] = if (s <= 0) {
     Left("Speed must be greater than 0")
@@ -23,7 +21,3 @@ class Car(nbDoor: Int, val color: Color, val nbPlaces: Int, val speed: Int = 0) 
   }
 
 }
-
-
-
-
