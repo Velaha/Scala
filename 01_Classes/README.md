@@ -43,13 +43,8 @@ Instantiate one car, with primary constructor and after one with secondary const
 
 Drive your cars, accelerate, brake, check speed... test error cases also. 
 
- 
 ## Summary
 
 Here we saw how create one class in Scala language and how declare some methods. In this implementation,
 we used the object oriented paradigm by used the exception and used the mutable internal state. 
-<<<<<<< 9f2719ea1bf850834d8d2b0f2f85682b68ab0416
-Next exercise will show you how we can change our approach and be more functional.
-=======
-Next exercise will show you how we can change our approach and be more functional
->>>>>>> remove secondary constructor
+Following exercise will show you how we can change our approach and be more functional.

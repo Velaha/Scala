@@ -1,11 +1,11 @@
-# TD Scala
+# Scala - TD1
 
-This project aims to help you to dive further into Scala language. Several exercices are available
+This project aims to help you to dive further into Scala language. Several exercises are available
 
 # Setup environment
 
 ## Install sbt
-First of all, you have to setup your environment to be able to run exercices.
+First of all, you have to setup your environment to be able to run exercises.
 Only SBT is required for exercises. Please follow the process here to install it : 
 
 [Installing Sbt](https://www.scala-sbt.org/1.x/docs/Setup.html)
