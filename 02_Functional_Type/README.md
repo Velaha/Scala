@@ -70,13 +70,15 @@ Info : We have modified the Car's signature. The field `color: String` has been 
 
 Utility class `CarConstructor` is available in package `constructor`.
 
-    > Search a car by its id (from 1 to 7), and
-    > Display its color
-    > Avoid any crash when Car isn't found (pattern matching, fold, etc..)
+Do following points :   
 
-    > Nowm we looking for some Cars with the same color
-    > Once you found some Car (or not), compute the whole number of places available
-    > Avoid any crash when Car isn't found (pattern matching, fold, etc..)
+ - Search a car by its id (from 1 to 7), and
+ - Display its color
+ - Avoid any crash when Car isn't found (pattern matching, fold, etc..)
+
+ - Now we looking for some Cars with the same color
+ - Once you found some Car (or not), compute the whole number of places available
+ - Avoid any crash when Car isn't found (pattern matching, fold, etc..)
  
    
 ## Summary
