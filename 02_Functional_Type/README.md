@@ -22,6 +22,8 @@ Now, we are allowed to read all attribute from outside of the instance.
 
 ### 2) Master word : Pure
 
+from package `com.td.scala.functional_types._1`
+
 The two methods break the concept of functional paradigm:
 
     - modifies internal state of the instance
@@ -63,6 +65,8 @@ It is perfect for our needs. Then here we will introduce this type in methods' s
 
   
 ### 3) Car constructor
+
+from package `com.td.scala.functional_types._2`
 
 In section, we will use others functional type : `Option`, `List`
 
