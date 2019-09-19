@@ -10,7 +10,7 @@ object Main extends App {
 
   println(
     """Build a concept car that embeded a turbo that make it the faster car in the world
-      |when the pilot speed up, its speed rise up by 5 times than standard car
+      |when the pilot speed up, its speed rise up by 10 times than standard car
       |""".stripMargin)
 
 
