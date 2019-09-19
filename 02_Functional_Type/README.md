@@ -59,7 +59,7 @@ It is perfect for our needs. Then here we will introduce this type in methods' s
 ```
 
     > Change your code accordingly.
-    Integrate the pattern matching to handle the result (Success or Failure)
+    Integrate the pattern matching to handle the result (Left or Right)
 
   
 ### 3) Car constructor
