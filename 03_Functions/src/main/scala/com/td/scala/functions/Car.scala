@@ -13,6 +13,7 @@ class Car(val nbDoor: Int, val color: Color, val nbPlaces: Int, price: Double = 
           this.nbDoor,
           this.color,
           this.nbPlaces,
+          this.price,
           turbo(s + speed)
         )
       )
@@ -22,7 +23,7 @@ class Car(val nbDoor: Int, val color: Color, val nbPlaces: Int, price: Double = 
     if (s >= 0) {
       Left("Speed must be lower than 0")
     } else {
-      Right(new Car(this.nbDoor, this.color, this.nbPlaces, speed + s))
+      Right(new Car(this.nbDoor, this.color, this.nbPlaces,this.price, speed + s))
     }
 
 }
