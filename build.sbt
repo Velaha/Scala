@@ -3,10 +3,10 @@ scalaVersion in ThisBuild := "2.12.10"
 name := "TD Scala"
 organization := "com.td.scala"
 
-lazy val intro          = (project in file("00_intro")).dependsOn(classes, functionalType, functions, recursion)
-lazy val classes        = (project in file("01_Classes"))
-lazy val functionalType = (project in file("02_Functional_Type"))
-lazy val functions      = (project in file("03_Functions"))
-lazy val recursion      = (project in file("04_Recursion"))
+lazy val week1_intro          = (project in file("week_1/00_intro")).dependsOn(week1_classes, week1_functionalType, week1_functions, week1_recursion)
+lazy val week1_classes        = (project in file("week_1/01_Classes"))
+lazy val week1_functionalType = (project in file("week_1/02_Functional_Type"))
+lazy val week1_functions      = (project in file("week_1/03_Functions"))
+lazy val week1_recursion      = (project in file("week_1/04_Recursion"))
 
 mappings in (Compile, packageDoc) := Seq()

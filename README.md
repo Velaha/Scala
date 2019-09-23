@@ -1,4 +1,4 @@
-# Scala - TD1
+# Scala - TD
 
 This project aims to help you to dive further into Scala language. Several exercises are available
 
@@ -35,6 +35,17 @@ The following message should appear in the console :
 From now you are ready !
 
 *Tips : to see all available modules, used : `sbt projects` 
+
+## TDs' organisation
+
+TDs are organised by week : 
+
+    - Week_1
+    - Week_2
+    - Week_3
+    - Week_4
+    
+Under each directories above you will find exercices for the current week.
 
 ## Next
 Go to the next instructions `01_Classes/README.md`
