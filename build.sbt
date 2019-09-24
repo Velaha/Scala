@@ -18,5 +18,6 @@ lazy val week1_recursion      = (project in file("week_1/04_Recursion"))
 // week 2
 
 lazy val week2_classes = (project in file("week_2/05_Classes"))
+lazy val week2_case_classes = (project in file("week_2/06_Case_Classes"))
 
 mappings in (Compile, packageDoc) := Seq()
