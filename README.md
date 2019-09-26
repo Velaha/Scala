@@ -45,7 +45,7 @@ TDs are organised by week :
     - Week_3
     - Week_4
     
-Under each directories above you will find exercices for the current week.
+Under each directories above you will find exercises for the current week.
 
 ## Next
 Go to the next instructions `01_Classes/README.md`

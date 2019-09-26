@@ -1,4 +1,4 @@
-# Classes (recall)
+# Case classes
 
 ## Purpose
 
@@ -48,7 +48,7 @@ To be sur that you update has been correctly done, display the version.
 
 ### 4) one companion for life
 
-You should notice, but for the case class, the companion object isn't required. At this stage, 
+You should notice for the case class, the companion object isn't required. At this stage, 
 the companion object provide nothing more (wait until will cover implicit feature)
 
 ## Summary
