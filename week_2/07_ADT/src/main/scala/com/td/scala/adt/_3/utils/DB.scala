@@ -1,8 +1,9 @@
 package com.td.scala.adt._3.utils
 
-import com.td.scala.adt._2.Browser
-import com.td.scala.adt._2.adt.types.kind.{ Chrome, Firefox, IE, Opera, Safari }
-import com.td.scala.adt._2.adt.types.platform._
+import com.td.scala.adt._3.Browser
+import com.td.scala.adt._3.adt.types.kind._
+import com.td.scala.adt._3.adt.types.platform._
+
 
 object DB {
 
