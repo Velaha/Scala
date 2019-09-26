@@ -8,7 +8,10 @@ lazy val week1_intro = (project in file("week_1/00_intro")).dependsOn(
   week1_classes,
   week1_functionalType,
   week1_functions,
-  week1_recursion
+  week1_recursion,
+  week2_classes,
+  week2_case_classes,
+  week2_ADT
 )
 lazy val week1_classes        = (project in file("week_1/01_Classes"))
 lazy val week1_functionalType = (project in file("week_1/02_Functional_Type"))
