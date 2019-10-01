@@ -24,4 +24,7 @@ lazy val week2_classes = (project in file("week_2/05_Classes"))
 lazy val week2_case_classes = (project in file("week_2/06_Case_Classes"))
 lazy val week2_ADT = (project in file("week_2/07_ADT"))
 
+// week 3
+lazy val week3_TypeClass = (project in file("week_3/08_TypeClass"))
+
 mappings in (Compile, packageDoc) := Seq()
