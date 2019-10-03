@@ -3,7 +3,7 @@
 ## Purpose
 
 Here, we will talk about typeclass and we try to understand the mechanism
-In the module you have 
+In this module you have one base code to be fill. Read instructions, it will drive you step by step.
 
 ## Todo : 
 
