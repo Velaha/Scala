@@ -2,3 +2,5 @@
 /js
 *target
 .DS_S
+.metals
+.bloop
