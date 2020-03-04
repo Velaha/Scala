@@ -1,13 +1,13 @@
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
-import akka.http.scaladsl.model.{ ContentTypes, HttpEntity, StatusCodes }
+import akka.http.scaladsl.model.StatusCodes._
+import akka.http.scaladsl.model.{ ContentTypes, StatusCodes }
 import akka.http.scaladsl.server.Directives._
 import akka.stream.ActorMaterializer
 import de.heikoseeberger.akkahttpcirce.FailFastCirceSupport
 import io.circe.generic.auto._
-import model.Contact
-import StatusCodes._
 import io.circe.syntax._
+import model.Contact
 
 import scala.concurrent.Future
 import scala.io.StdIn
@@ -28,15 +28,24 @@ object HttpWebApp extends App with FailFastCirceSupport {
     get {
       onComplete(Future.successful(AppContext.contactService.getContact(id))) { c =>
         convert(c) match {
-          case Some(contact) => complete(OK -> contact.asJson.noSpaces)
+          case Some(contact) => complete(OK -> contact.asJson)
           case None => complete(NotFound -> "None contact found")
         }
       }
+    } ~ delete {
+      onComplete(Future(AppContext.contactService.suppressionContact(id)))(
+        c =>
+          convert(c) match {
+            case Some(contact) => complete(OK -> s"Contact ${id} as been deleted with success")
+            case None => complete(NotFound -> s"None contact found for ${id}")
+        }
+      )
+
     }
   } ~ path("api" / "contacts") {
     post {
       entity(as[Contact]) { c: Contact =>
-        onComplete(Future(AppContext.contactService.createContact(c)))(_ => complete(OK -> c))
+        onComplete(Future(AppContext.contactService.createContact(c)))(contact => complete(OK -> convert(contact).asJson))
       }
     }
   }

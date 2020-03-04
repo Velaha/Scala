@@ -1,11 +1,11 @@
-import repository.{ContactRepository, ContactRepositoryImpl}
-import service.{ContactService, ContactServiceImpl}
+import repository.{ ContactRepository, ContactRepositoryImpl }
+import service.{ ContactService, ContactServiceImpl }
 
-object AppContext{
+object AppContext {
 
-
-  private val contactRepository:ContactRepository = new ContactRepositoryImpl()
-  val contactService:ContactService = new ContactServiceImpl(contactRepository)
-
+// ici nous utilisons l'injection de dépendance à la compilation.
+// En d'autre terme, nous créons nous même notre grappe d'objets
+  private val contactRepository: ContactRepository = new ContactRepositoryImpl()
+  val contactService: ContactService               = new ContactServiceImpl(contactRepository)
 
 }
