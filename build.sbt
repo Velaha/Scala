@@ -31,6 +31,7 @@ lazy val week2_ADT          = (project in file("week_2/07_ADT"))
 lazy val week3_implicits = (project in file("week_3/08_Implicits"))
 lazy val week3_TypeClass = (project in file("week_3/09_TypeClass"))
 
+
 lazy val week4_app = (project in file("week_4/contactsApp")).settings(
   libraryDependencies ++= Seq(
     "com.typesafe.akka" %% "akka-http"   % "10.1.11",
@@ -38,7 +39,8 @@ lazy val week4_app = (project in file("week_4/contactsApp")).settings(
     "de.heikoseeberger" %% "akka-http-circe" % "1.31.0",
     "io.circe" %% "circe-core" % "0.12.3",
     "io.circe" %% "circe-generic" % "0.12.3",
-    "io.circe" %% "circe-parser" %"0.12.3" 
+    "io.circe" %% "circe-parser" %"0.12.3",
+    "de.heikoseeberger" %% "akka-http-circe" % "1.31.0"
 
   )
 )
