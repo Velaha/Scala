@@ -1,4 +1,4 @@
-# Scala - TD
+# Scala - TD - Autumn 2019
 
 These exercises aim to guide your first steps into Scala language.
 
