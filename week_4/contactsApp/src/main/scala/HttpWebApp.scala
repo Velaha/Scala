@@ -47,6 +47,13 @@ object HttpWebApp extends App with FailFastCirceSupport {
         }
       }
     }
+  } ~ path("api" / "contacts " / String) { letter =>
+    get {
+      entity(as[Contact]) { c: Contact =>
+        onComplete(Future(AppContext.contactService.createContact(c)))(contact => complete(OK -> convert(contact).asJson))
+      }
+    }
+  }
 
   val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
   println(s"Server online @ http://localhost:8080/\nPress RETURN to stop...")
