@@ -1,4 +1,4 @@
-## 3) Car constructor
+## Part 3) Car constructor
 
 In this section, we will use others functional type: `Option`, `List`
 
