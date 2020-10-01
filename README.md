@@ -48,4 +48,4 @@ TDs are organized by week:
 Under each directories above you will find exercises for the current week.
 
 ## Next
-Go to the next instructions `week_1/01_Classes/README.md`
+Go to the next instructions [week_1/01_Classes/README.md]()

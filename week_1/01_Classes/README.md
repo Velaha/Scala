@@ -3,9 +3,12 @@
 ## Purpose
 
 This first exercise will help you to get more familiar with the basic creation of a _class_.
+
 It is a very short exercise, do it purely Object-oriented ("Java's style"), we will iterate on it in the following exercise.
 
-## Todo
+If you have difficulties with this exercice, you can jump to the next one: one solution is provided.
+
+## Instructions
 
 ### 1) Create a class
 
