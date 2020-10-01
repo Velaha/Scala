@@ -2,7 +2,7 @@
 
 **An implementation of the class `Car` is provided**
 
-## 1) Immutability is my friend
+## Part 1) Immutability is my friend
 
 The first step is to enforce immutability.
 _Immutability is a central aspect of functional programing_
@@ -11,7 +11,7 @@ Replace attributes `private`/ `var` by `val` declarations.
 Now, we are allowed to read all attribute from outside of the instance.
 
 
-## 2) Master word: Pure
+## Part 2) Master word: Pure
 
 The two methods break the concept of functional paradigm:
 
@@ -55,4 +55,4 @@ def brake(s: Int): Either[String,Car]
 > Change your code accordingly.
 Integrate the pattern matching to handle the result (Left or Right)
 
-[(Third part](../_2/README.md)
+[Third part](../_2/README.md)
