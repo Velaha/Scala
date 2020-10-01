@@ -55,4 +55,4 @@ def brake(s: Int): Either[String,Car]
 > Change your code accordingly.
 Integrate the pattern matching to handle the result (Left or Right)
 
-[week_1/02_Functional_Type/src/main/scala/com/td/scala/functional_types/_2/README.md](Third part)
+[(Third part](../_2/README.md)
