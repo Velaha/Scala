@@ -5,28 +5,9 @@
 This exercise aims to move from object-oriented to functional.
 We will refactor the class _Car_ from the previous with a functional approach.
 
-Go to package [week_1/02_Functional_Type/src/main/scala/com/td/scala/functional_types/_1/README.md](`com.td.scala.functional_types._1`)
+Go to [week_1/02_Functional_Type/src/main/scala/com/td/scala/functional_types/_1/README.md](Part 1 & 2)
 
-### 3) Car constructor
-
-Go to package `com.td.scala.functional_types._2`
-
-In this section, we will use others functional type: `Option`, `List`
-
-Info: We have modified the Car's signature. The field `color: String` has been replaced by a type `Color` (we will ignore the details of its implementation for the moment).
-
-Utility class `CarConstructor` is available in package `constructor`.
-
-Do following points:
-
- - Search a car by its id (from 1 to 7), and
- - Display its color
- - Avoid any crash when Car isn't found (pattern matching, fold, etc..)
-
- - Now we looking for some Cars with the same color
- - Once you found some Car (or not), compute the whole number of places available
- - Avoid any crash when Car isn't found (pattern matching, fold, etc..)
-
+then to [week_1/02_Functional_Type/src/main/scala/com/td/scala/functional_types/_2/README.md](Part 3)
 
 ## Summary
 
