@@ -48,4 +48,4 @@ In the `Main.scala`, create and drive your cars, accelerate, brake, check speed.
 
 Here we saw how create one class in Scala language and how declare some methods. In this implementation,
 we used the object oriented paradigm by used the exception and used the mutable internal state.
-The next exercise will show you how we can change our approach and be more functional.
+The [week_1/02_Functional_Type/README.md](next exercise) will show you how we can change our approach and be more functional.
