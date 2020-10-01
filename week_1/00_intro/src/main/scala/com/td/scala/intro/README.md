@@ -28,6 +28,6 @@ The following message should appear in the console:
 
 You are ready to go on!
 
-*Tips: to see all available modules, used: `sbt projects`
+*Tips*: to see all available modules, used: `sbt projects`
 
 [First exercice](../../../../../../../../01_Classes/README.md)
