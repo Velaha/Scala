@@ -1,13 +1,18 @@
 # Setup environment
 
-## Install Sbt
+## Install
+
+### Java 11
+**Requires** Java 11 (or 8)
+
+### Sbt
 Sbt (Simple Build Tool) is the default build tool in the Scala eco-system.
 
 [Sbt is required for the exercises](https://www.scala-sbt.org/1.x/docs/Setup.html)
 
 ## Validate your setup
 
-**Requires** Java 11 (or 8)
+Clone the repository and run Sbt from it's root.
 
 At top of the project, run the following command:
 
