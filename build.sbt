@@ -22,7 +22,6 @@ lazy val week1_functions      = (project in file("week_1/03_Functions"))
 lazy val week1_recursion      = (project in file("week_1/04_Recursion"))
 
 // week 2
-
 lazy val week2_classes      = (project in file("week_2/05_Classes"))
 lazy val week2_case_classes = (project in file("week_2/06_Case_Classes"))
 lazy val week2_ADT          = (project in file("week_2/07_ADT"))
@@ -31,7 +30,7 @@ lazy val week2_ADT          = (project in file("week_2/07_ADT"))
 lazy val week3_implicits = (project in file("week_3/08_Implicits"))
 lazy val week3_TypeClass = (project in file("week_3/09_TypeClass"))
 
-
+// week 4
 lazy val week4_app = (project in file("week_4/contactsApp")).settings(
   libraryDependencies ++= Seq(
     "com.typesafe.akka" %% "akka-http"   % "10.1.11",
@@ -46,4 +45,3 @@ lazy val week4_app = (project in file("week_4/contactsApp")).settings(
 )
 
 mappings in (Compile, packageDoc) := Seq()
-
