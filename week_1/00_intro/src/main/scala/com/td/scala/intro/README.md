@@ -51,7 +51,7 @@ sbt:intro> run
 
 [info] Running com.td.scala.Intro
 
-Ready to learn!
+Ready to run the tests!
 
 [success] Total time: 1 s, completed Sep 17, 2019 12:32:47 AM
 >>>
@@ -60,6 +60,29 @@ Ready to learn!
 ```
 test
 ```
+
+The following message should appear in the console
+>>>
+sbt:TD Scala> week1_intro/test
+
+[info] IntroTest:
+
+[info] A test
+
+[info] - should always pass
+
+[info] Run completed in 344 milliseconds.
+
+[info] Total number of tests run: 1
+
+[info] Suites: completed 1, aborted 0
+
+[info] Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
+
+[info] All tests passed.
+
+[success] Total time: 1 s, completed 2 Oct 2020, 21:54:44
+>>>
 
 ### Alternatives
 - In interative mode `<project_name>/run` or `<project_name>/test`
