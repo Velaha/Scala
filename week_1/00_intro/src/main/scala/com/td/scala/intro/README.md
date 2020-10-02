@@ -10,7 +10,7 @@ cd td_scala
 -  Java 11
 - [Sbt](https://www.scala-sbt.org/1.x/docs/Setup.html)
 
-## Sbt commands
+## Start Sbt
 
 Sbt (Simple Build Tool) is the default build tool in the Scala eco-system.
 
@@ -30,37 +30,40 @@ To continue, you must have
 - move at the top of the repository
 - run sbt in interative mode
 
-In Sbt interactive mode,
-- You can **list** the sub-projects with
-
-```sbt
+### List sub-projects
+```
 projects
 ```
 
-- **Select** which sub-project to execute with the sbt command `project <project_name>`
+### Select a sub-project
+```
+project week1_intro
+```
 
-    project week1_intro
-
-- **Run** the _runnable_ class of this sub-project with
+### Run the main class of this sub-project
 ```
 run
 ```
 
-    The following message should appear in the console:
+The following message should appear in the console
+>>>
+sbt:intro> run
 
-    >>>
-    sbt:intro> run
+[info] Running com.td.scala.Intro
 
-    [info] Running com.td.scala.Intro
+Ready to learn!
 
-    Ready to learn!
+[success] Total time: 1 s, completed Sep 17, 2019 12:32:47 AM
+>>>
 
-    [success] Total time: 1 s, completed Sep 17, 2019 12:32:47 AM
-    >>>
+### Test the code
+```
+test
+```
 
-- **Test** the code with the unit-tests
-
-    test
+### Alternatives
+- In interative mode `<project_name>/run` or `<project_name>/test`
+- From batch, `sbt "run"`, `sbt "<project_name>/run"`, ...
 
 You are ready to go on!
 
