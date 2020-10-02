@@ -1,8 +1,10 @@
 # Setup environment
 
 ## Clone the repository
-    git clone https://gitlab.com/fabszn/td_scala.git
-    cd td_scala
+```bash
+git clone https://gitlab.com/fabszn/td_scala.git
+cd td_scala
+```
 
 ## Install
 -  Java 11
@@ -45,8 +47,11 @@ The following message should appear in the console:
 
 >>>
 sbt:intro> run
+
 [info] Running com.td.scala.Intro
+
 Ready to learn!
+
 [success] Total time: 1 s, completed Sep 17, 2019 12:32:47 AM
 >>>
 
