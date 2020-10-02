@@ -1,4 +1,4 @@
-scalaVersion in ThisBuild := "2.12.10"
+scalaVersion in ThisBuild := "2.12.12"
 
 name := "TD Scala"
 organization := "com.td.scala"
@@ -40,7 +40,6 @@ lazy val week4_app = (project in file("week_4/contactsApp")).settings(
     "io.circe" %% "circe-generic" % "0.12.3",
     "io.circe" %% "circe-parser" %"0.12.3",
     "de.heikoseeberger" %% "akka-http-circe" % "1.31.0"
-
   )
 )
 
