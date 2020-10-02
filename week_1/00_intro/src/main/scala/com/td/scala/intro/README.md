@@ -11,9 +11,12 @@ At top of the project, run the following command:
 
 
     sbt
-    
+
 Sbt requires Java 11 or 8
     sbt -v -java-home <PATH_JAVA_11>
+
+<PATH_JAVA_11> under IGM system
+/usr/lib/jvm/java-11-openjdk-amd64
 
 When sbt console is loaded, run the following command:
 
