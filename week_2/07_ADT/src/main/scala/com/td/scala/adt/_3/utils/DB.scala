@@ -4,7 +4,6 @@ import com.td.scala.adt._3.Browser
 import com.td.scala.adt._3.adt.types.kind._
 import com.td.scala.adt._3.adt.types.platform._
 
-
 object DB {
 
   val browsers = Seq(

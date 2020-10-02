@@ -23,32 +23,30 @@ object HttpWebApp extends App with FailFastCirceSupport {
 
   val jsonType = ContentTypes.`application/json`
   val route =
-
-  path("api" / "contacts" / LongNumber) { id =>
-    get {
-      onComplete(Future.successful(AppContext.contactService.getContact(id))) { c =>
-        convert(c) match {
-          case Some(contact) => complete(OK -> contact.asJson)
-          case None => complete(NotFound -> "None contact found")
+    path("api" / "contacts" / LongNumber) { id =>
+      get {
+        onComplete(Future.successful(AppContext.contactService.getContact(id))) { c =>
+          convert(c) match {
+            case Some(contact) => complete(OK -> contact.asJson)
+            case None => complete(NotFound -> "None contact found")
+          }
         }
-      }
-    } ~ delete {
-      onComplete(Future(AppContext.contactService.suppressionContact(id)))(
-        c =>
+      } ~ delete {
+        onComplete(Future(AppContext.contactService.suppressionContact(id)))(c =>
           convert(c) match {
             case Some(contact) => complete(OK -> s"Contact ${id} as been deleted with success")
             case None => complete(NotFound -> s"None contact found for ${id}")
-        }
-      )
+          }
+        )
 
-    }
-  } ~ path("api" / "contacts") {
-    post {
-      entity(as[Contact]) { c: Contact =>
-        onComplete(Future(AppContext.contactService.createContact(c)))(contact => complete(OK -> convert(contact).asJson))
+      }
+    } ~ path("api" / "contacts") {
+      post {
+        entity(as[Contact]) { c: Contact =>
+          onComplete(Future(AppContext.contactService.createContact(c)))(contact => complete(OK -> convert(contact).asJson))
+        }
       }
     }
-  }
 
   val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
   println(s"Server online @ http://localhost:8080/\nPress RETURN to stop...")

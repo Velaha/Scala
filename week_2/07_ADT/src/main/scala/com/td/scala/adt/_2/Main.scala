@@ -10,6 +10,7 @@ object Main extends App {
 
   val chrome1_3 = ReleaseManager.releaseVersion(chrome1_2, 1.3)
 
-  if (chrome1_3.version == 1.3) { println("great") } else { "oups!!" }
+  if (chrome1_3.version == 1.3) { println("great") }
+  else { "oups!!" }
 
 }
