@@ -9,7 +9,11 @@ Sbt (Simple Build Tool) is the default build tool in the Scala eco-system.
 
 At top of the project, run the following command:
 
+
     sbt
+    
+Sbt requires Java 11 or 8
+    sbt -v -java-home <PATH_JAVA_11>
 
 When sbt console is loaded, run the following command:
 
