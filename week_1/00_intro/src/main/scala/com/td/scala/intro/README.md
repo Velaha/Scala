@@ -1,36 +1,40 @@
 # Setup environment
 
+## Clone the repository
+    git clone https://gitlab.com/fabszn/td_scala.git && cd td_scala
+
 ## Install
+-  Java 11
+- [Sbt](https://www.scala-sbt.org/1.x/docs/Setup.html)
 
-### Java 11
-**Requires** Java 11 (or 8)
+## Sbt commands
 
-### Sbt
 Sbt (Simple Build Tool) is the default build tool in the Scala eco-system.
 
-[Sbt is required for the exercises](https://www.scala-sbt.org/1.x/docs/Setup.html)
+From the root of the repository
+
+- `sbt` runs sbt in interative mode
+    - `sbt -v` with verbose startup (checkout Java version)
+    - `sbt -java-home <PATH_JAVA_11>` with specific Java version
+    - `sbt --java-home <PATH_JAVA_11>` some version require double dash
+
+Note: <PATH_JAVA_11> may be at `/usr/lib/jvm/java-11-openjdk-amd64` under some Linux machines
 
 ## Validate your setup
 
-Clone the repository and run Sbt from it's root.
+To continue, you must have
+- cloned the repository
+- move at the top of the repository
+- run sbt in interative mode
 
-At top of the project, run the following command:
+In Sbt intertive mode,
+- You can list the sub-projects with
+    projects
 
-    sbt
+- Select which sub-project to execute with the sbt command `project <project_name>`
+    project week1_intro
 
-Force the java version with
-    sbt -java-home <PATH_JAVA_11>
-or (for some OS)
-    sbt --java-home <PATH_JAVA_11>
-
-The path <PATH_JAVA_11> under the university machines is /usr/lib/jvm/java-11-openjdk-amd64
-
-When sbt console is loaded, run the following command:
-
-    project 01_intro
-
-and run your first program:
-
+- Execute the runnable class of this sub-project with
     run
 
 The following message should appear in the console:
@@ -41,7 +45,5 @@ The following message should appear in the console:
     [success] Total time: 1 s, completed Sep 17, 2019 12:32:47 AM
 
 You are ready to go on!
-
-*Tips*: to see all available modules, use: `sbt projects`
 
 [First exercice](../../../../../../../../01_Classes/README.md)
