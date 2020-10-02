@@ -33,27 +33,30 @@ To continue, you must have
 In Sbt interactive mode,
 - You can **list** the sub-projects with
 
-    projects
+```sbt
+projects
+```
 
 - **Select** which sub-project to execute with the sbt command `project <project_name>`
 
     project week1_intro
 
 - **Run** the _runnable_ class of this sub-project with
+```
+run
+```
 
-    run
+    The following message should appear in the console:
 
-The following message should appear in the console:
+    >>>
+    sbt:intro> run
 
->>>
-sbt:intro> run
+    [info] Running com.td.scala.Intro
 
-[info] Running com.td.scala.Intro
+    Ready to learn!
 
-Ready to learn!
-
-[success] Total time: 1 s, completed Sep 17, 2019 12:32:47 AM
->>>
+    [success] Total time: 1 s, completed Sep 17, 2019 12:32:47 AM
+    >>>
 
 - **Test** the code with the unit-tests
 
