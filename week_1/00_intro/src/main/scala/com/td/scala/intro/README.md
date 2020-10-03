@@ -23,6 +23,23 @@ From the root of the repository
 
 Note: under some Linux machines *<PATH_JAVA_11>* is `/usr/lib/jvm/java-11-openjdk-amd64`
 
+### Typical Sbt structure
+    build.sbt                               // the build description file
+    project/                                // configuration of the build
+        build.properties                    // sbt.version
+        plugin.sbt                          // plugins for sbt (ex: scalafmt for formatting code)
+    src/
+        main/
+            resources/                      // main files to include main in jar
+            scala/                          // main Scala sources
+            java/                           // main Java sources
+        test/
+            resources                       // files to include in test jar
+            scala/                          // test Scala sources
+            java/                           // test Java sources
+
+In this repository, there are multiple `src` placed in different directory `week1_intro`, ... that correspond to sub-modules as defined in `build.sbt`.
+
 ## Validate your setup
 
 To continue, you must have
