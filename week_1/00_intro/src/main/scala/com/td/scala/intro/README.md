@@ -105,6 +105,13 @@ sbt:TD Scala> week1_intro/test
 - In interative mode `<project_name>/run` or `<project_name>/test`
 - From batch, `sbt "run"`, `sbt "<project_name>/run"`, ...
 
+
+# Next
+
+Before you continue,
+- note that compiled classes have been generated to `/target`
+- you can use the sbt command `scalafmt` (added via a plugin) to format the source code
+
 You are ready to go on!
 
 [First exercice](../../../../../../../../01_Classes/README.md)
