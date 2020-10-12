@@ -10,7 +10,7 @@ For this exercice, we want to represent Web browsers into our program
 
 ### 1) First attempt
 
-Declare one class name `Browser` in the package `com.td.scala.classes`.
+> Declare one class name `Browser` in the package `com.td.scala.classes`
 
 The class `Browser` has 3 attributes :
 
@@ -18,7 +18,7 @@ The class `Browser` has 3 attributes :
 - `kind`: String : public immutable
 - `platform`: String : public immutable
 
-and create three kind of browser in `Main.scala`
+and create three kind of browsers in `Main.scala`
 - `firefox1`: Firefox version 1.0, on Platform : Windows, MacOs Linux
 - `opera1`: Opera version 0.4, on Platform MacOs
 - `chrome1`: Chrome version 2.4, on Platform : Windows, Linux
@@ -26,7 +26,7 @@ and create three kind of browser in `Main.scala`
 
 ### 2) Comparison : Semantic vs Reference
 
-Now, our program requires to compare different instances of browsers.
+Our program requires to compare different instances of browsers
 
 > Make a comparison between `firefox1` and `chrome1` by `equals`' method
 
@@ -44,6 +44,7 @@ Functional Programming values immutability. Hence, each time the internal state 
 The Chrome's `2.5` version has been released!
 
 > Create the instance corresponding to the new version
+
 > Display the version
 
 
@@ -52,9 +53,11 @@ The Chrome's `2.5` version has been released!
 To create a instance of a class, we need to use the `new` operator. Scala offers a mechanism to avoid this operator.
 
 > Create the companion object of `Browser`
+
 > Implement the right method to allow instantiation of `Browser` without using the new operator
 
 
 ## Summary
 
-In this section, we briefly came back to the notion of classes and bumped into some recurrent complexity of coding (compare, update object, ...). The [next exercice](/week_2/06_Case_Classes/README.md) overcomes that with _case classes_.
+In this section, we briefly came back to the notion of classes and bumped into some recurrent complexity of coding (compare, update object, ...).
+The [next exercice](/week_2/06_Case_Classes/README.md) overcomes that with _case classes_.
