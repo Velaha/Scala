@@ -3,7 +3,7 @@
 These exercises aim to guide your first steps into the Scala language.
 
 - [Week 1](week_1/00_intro/src/main/scala/com/td/scala/intro/README.md)
-- Week_2
+- [Week 2](week_2/05_Classes/README.md)
 - Week_3
 - Week_4
 
