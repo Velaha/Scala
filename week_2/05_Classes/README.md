@@ -1,55 +1,60 @@
-# Classes (reminder)
+# Classes
 
 ## Purpose
 
-Here, we will talk about _classes_. We will do some reminders
+This exercice revisits the notion of _classes_.
 
-## Todo
+## Instructions
 
-### 1) Your second First class
+For this exercice, we want to represent Web browsers into our program
 
-Declare one class name `Browser` in package
+### 1) First attempt
 
-    com.td.scala.classes
+Declare one class name `Browser` in the package `com.td.scala.classes`.
 
-
-The class `Browser` have 3 attributes :
+The class `Browser` has 3 attributes :
 
 - `version`: Double : public immutable
 - `kind`: String : public immutable
 - `platform`: String : public immutable
 
+and create three kind of browser in `Main.scala`
+- `firefox1`: Firefox version 1.0, on Platform : Windows, MacOs Linux
+- `opera1`: Opera version 0.4, on Platform MacOs
+- `chrome1`: Chrome version 2.4, on Platform : Windows, Linux
+- `chrome2`: Chrome version 2.4, on Platform : Windows, Linux   // identical to chrome1 but different reference
 
 ### 2) Comparison : Semantic vs Reference
 
-Here, we are dive in comparison feature.
-Create different kind of browser :
+Now, our program requires to compare different instances of browsers.
 
-- Firefox version 1.0, on Platform : Windows, MacOs Linux
-- Chrome version 2.4, on Platform : Windows, Linux
-- Opera version 0.4, on Platform MacOs
+> Make a comparison between `firefox1` and `chrome1` by `equals`' method
 
-Once instances have been created, make a comparison between Firefox and Chrome by equals' method. naturally, both instances are differents
+The instances are different
 
-Create two instance (with the same attributes values) for Chrome browser. Make a comparison as above. What do you note.
+> Make a comparison as above. What do you note.
 
-What we can do to change this behavior ? (think what do you would in Java context).
+What we can do to change this behavior ? (think about what you would do in Java context).
 
 
 ### 3) New version
 
-We are in immutable context. So each time that we want to change the internal state of an object, we have to recreate new one, with old values plus value updated.
+Functional Programming values immutability. Hence, each time the internal state of an object has to be modified, a new one is created with some updated values.
 
-New version of Chrome has been released : 2.5. Update the version on current instance of Chrome.
-To be sur that you update has been correctly done, display the version.
+The Chrome's `2.5` version has been released!
 
-### 4) one companion for life
+> Create the instance corresponding to the new version
+> Display the version
 
-To create a instance of a class, we need to use the `new` operator. Scala propose a mechanism to avoid this operator.
-For our `Browser` class create the dedicate companion object with the right method to allow instantiation without using the new operator
+
+### 4) One companion for life
+
+To create a instance of a class, we need to use the `new` operator. Scala offers a mechanism to avoid this operator.
+
+> Create the companion object of `Browser`
+> Implement the right method to allow instantiation of `Browser` without using the new operator
 
 
 ## Summary
 
-Here, we just played with the class structure to discover how we can do simples actions (as compare, update object, etc).
-We will see in the next td that Scala hold a really interested structure to ease those action.
+In this section, we briefly came back to the notion of classes and bumped into some recurrent complexity of coding (compare, update object, ...). The [next exercice](/week_2/06_Case_Classes/README.md) overcomes that with _case classes_.
