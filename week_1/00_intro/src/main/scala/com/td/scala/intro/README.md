@@ -1,4 +1,4 @@
-# Setup environment
+# Environment setup
 
 ## Clone the repository
 ```bash
