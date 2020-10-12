@@ -1,75 +1,60 @@
-# Algebric Data Type
+# ADT - Algebraic Data Type
 
 ## Purpose
 
-Here, we will talk about Algebric Data Type (ADT). This approch allows embrace the type system
- and make our code base more robust 
-In this exercise, you will explore the flavor how construct a robust base code based 
+Discover Algebraic Data Type (ADT).
 
-## Todo : 
+ADT is a mecanism that allows to extend the type system in a structured manner.
+It helps to make our code base more robust
+
+## Instructions
 
 ### 1) Make thing more formal
 
-You will retrieve our case class `Browser` in package 
+In package `com.td.scala.adt._1`, go to the case class `Browser` 
 
-    com.td.scala.adt._1
+The attributes `Kind` and `Platform` have limited number a possible values.
 
-From type system point of view, two attributes of this case class ask to be defined with a specific type.
+Let's define better types for them!
 
-both attribute sare : 
-    - Kind
-    - Platform
+`Kind` has following values:
+- Firefox
+- Chrome
+- IE
+- Opera
+- Safari
 
-In each case, we have a limited number a possible value.
+`Platform` has following values:
+- Windows
+- Linux
+- MacOs
 
-Make that two attributes have their specific type. 
+> Create the possible values for the two attributes
 
-kind will has following values : 
+Additionnally,
+- the types should be _closed_ (cannot be extended outside of their context).
+- the types should be placed respectively in `types.kind` and `types.platform` modules
 
-    - Firefox
-    - Chrome
-    - IE
-    - Opera
-    - Safari
-    
-Platform will has following values
-
-    - Windows
-    - Linux
-    - MacOs
-    
-Types that you will declare must closed et they mustn't be extended outside of their context.
-Requirements : organise those types by modules : 
-
-    - types.kind
-    - types.platform
-    
-tips : module == object nested
+*Tip: module == object nested*
 
 
-    
 ### 2) Release new version
 
-You will retrieve our case class `Browser` in package 
+In package `com.td.scala.adt._2`, go to the case class `Browser`
 
-    com.td.scala.adt._2
+The type system enhanced by Kind and Platform as expected from previous task.
 
-with the type system enhanced by Kind and Platform.
+> Implement `releaseVersion` method holded by the `utils.ReleaseManager`
 
-In this exercise, you have to implement `releaseVersion` method holded by the `utils.ReleaseManager` 
+*Tip: This implementation must based on the _case class_ characteristics*
 
-tips : This implementation must based on the case class characteristics
-
-Check that the new release of the browser is not equals to old one 
+Check that the new release of the browser is not equals to old one
 
 ### 3) Destructure your case class
 
-Move to the following package 
- 
-    com.td.scala.adt._3
+In the package `com.td.scala.adt._3`, there is an object `utils.DB`.
 
-In the package you will find the following object `utils.DB`
-DB provides one method which require a predicate as parameter. 
+DB provides one method that requires a predicate as parameter.
 
 Your job here is to implement several predicates according the following specifications.
 
@@ -77,9 +62,12 @@ Your job here is to implement several predicates according the following specifi
  - select all Chrome browsers compliant with Windows platform
  - select all browser with version equals to 1.0
  - select all Opera and IE browsers
- - select Chrome browser with version 3.4 and compliant with Linux Platform 
-   
+ - select Chrome browser with version 3.4 and compliant with Linux Platform
+
+*Tip: review Higher-order functions*
 
 ## Summary
 
-In this exercise, we saw that the type system (throught ADT) help us to produce safe code.  
+In this exercise, we saw that the type system (throught ADT) help us to produce safe code.
+
+# End of week 2

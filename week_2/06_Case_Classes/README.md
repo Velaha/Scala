@@ -2,55 +2,66 @@
 
 ## Purpose
 
-Here, we will talk about case class. 
-In this exercise, you will see how the case class will ease your life developer
+Use _cases classes_ to represent models.
 
-## Todo : 
+Question: when do we use _classes_ in Scala?
+
+Case class will ease your life developer
+
+## Instructions
+
+We will replace the usages of _classes_ by _cases classes_
 
 ### 1) Same but with case class
 
-Declare one case class name `Browser` in package 
+> Declare one case class name `Browser` in package `com.td.scala.case_classes`
 
-    com.td.scala.case_classes
+The class `Browser` has 3 attributes:
 
+- `version`: Double : public immutable
+- `kind`: String : public immutable
+- `platform`: String : public immutable
 
-The class _Browser_ must have 3 attributes : 
+and create the follwing instances in `Main.scala`
+- `firefox1`: Firefox version 1.0, on Platform : Windows, MacOs Linux
+- `opera1`: Opera version 0.4, on Platform MacOs
+- `chrome1`: Chrome version 2.4, on Platform : Windows, Linux
+- `chrome2`: Chrome version 2.4, on Platform : Windows, Linux   // identical to chrome1 but different reference
 
-    - version - Double : public immutable
-    - kind - String : public immutable
-    - platform - String : public immutable
- 
-*tips: for a case class, all fields are public and immutable by default*
-    
+*Tip: for a case class, all fields are public and immutable by default*
+
 ### 2) Comparison : Semantic vs Reference
 
-Here, we are diving in comparison feature.   
-Create different kind of browser : 
+Our program requires to compare different instances of browsers
 
-    - Firefox version 1.0, on Platform : Windows, MacOs Linux
-    - Chrome version 2.4, on Platform : Windows, Linux
-    - Opera version 0.4, on Platform MacOs
-    
-Once instances have been created, make a comparison between Firefox and Chrome by equals' method or == operator. naturally, both instances are differents
+> Make a comparison between `firefox1` and `chrome1` by `equals`' method and with `==` operator
 
-Create two instance (with the same attributes values) for Chrome browser. Make a comparison as above. What do you note.
+The instances are different
 
-We will see here that the behavior of case class is different than class. If you need same semantic than class, you can use `eq` and `ne` methods. 
-Both methods are based on reference comparison
-   
-   
-### 3) New version 
+> Make a comparison between chrome1 and chrome2
 
-We are in immutable context. So each time that we want to change the internal state of an object, we have to recreate new one, with old values plus value updated.
+What do you notice?
 
-New version of Chrome has been released : 2.5. Update the version on current instance of Chrome. In this context, take a look at the `copy` method.
-To be sur that you update has been correctly done, display the version. 
+We will see here that the behavior of _case classes_ is different than _classes_. If you need the same semantic than _classes_, you can use the `eq` and `ne` methods. Both methods are based on reference comparison
 
-### 4) one companion for life
 
-You should notice for the case class, the companion object isn't required. At this stage, 
-the companion object provide nothing more (wait until will cover implicit feature)
+### 3) New version
+
+Functional Programming values immutability. Hence, each time the internal state of an object has to be modified, a new one is created with some updated values.
+
+The Chrome's `2.5` version has been released!
+
+> Create the instance corresponding to the new version with the `copy` method
+
+> Display the version
+
+
+### 4) One companion for life
+
+_Case classes_ can be instantiated without the operator `new`. Notice that we did not have to implement the companion object to have this behavior like we had to with normal _classes_.
 
 ## Summary
 
-Here, we discovered the case class feature. It is a central feature in scala language. Case class provide plenty on methods which ease and clarify our code base 
+Here, we discovered _case classes_. It is a central feature in Scala. _Case classes_ provide plenty of methods which ease and clarify our code base!
+
+[Next exercice](/week_2/07_ADT/README.md)

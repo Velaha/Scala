@@ -12,13 +12,13 @@ For this exercice, we want to represent Web browsers into our program
 
 > Declare one class name `Browser` in the package `com.td.scala.classes`
 
-The class `Browser` has 3 attributes :
+The class `Browser` has 3 attributes:
 
 - `version`: Double : public immutable
 - `kind`: String : public immutable
 - `platform`: String : public immutable
 
-and create three kind of browsers in `Main.scala`
+and create the follwing instances in `Main.scala`
 - `firefox1`: Firefox version 1.0, on Platform : Windows, MacOs Linux
 - `opera1`: Opera version 0.4, on Platform MacOs
 - `chrome1`: Chrome version 2.4, on Platform : Windows, Linux
@@ -32,9 +32,9 @@ Our program requires to compare different instances of browsers
 
 The instances are different
 
-> Make a comparison as above. What do you note.
+> Make a comparison between chrome1 and chrome2
 
-What we can do to change this behavior ? (think about what you would do in Java context).
+What do you notice? What can we do to improve this behavior ? (What would you do in Java?)
 
 
 ### 3) New version
@@ -60,4 +60,5 @@ To create a instance of a class, we need to use the `new` operator. Scala offers
 ## Summary
 
 In this section, we briefly came back to the notion of classes and bumped into some recurrent complexity of coding (compare, update object, ...).
+
 The [next exercice](/week_2/06_Case_Classes/README.md) overcomes that with _case classes_.
