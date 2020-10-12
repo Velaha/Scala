@@ -2,9 +2,9 @@
 
 ## Purpose
 
-Here, we will talk about class. We will do some recalls
+Here, we will talk about _classes_. We will do some reminders
 
-## Todo :
+## Todo
 
 ### 1) Your second First class
 
@@ -13,11 +13,11 @@ Declare one class name `Browser` in package
     com.td.scala.classes
 
 
-The class _Browser_ must have 3 attributes :
+The class `Browser` have 3 attributes :
 
-    - version - Double : public immutable
-    - kind - String : public immutable
-    - platform - String : public immutable
+- `version`: Double : public immutable
+- `kind`: String : public immutable
+- `platform`: String : public immutable
 
 
 ### 2) Comparison : Semantic vs Reference
@@ -25,9 +25,9 @@ The class _Browser_ must have 3 attributes :
 Here, we are dive in comparison feature.
 Create different kind of browser :
 
-    - Firefox version 1.0, on Platform : Windows, MacOs Linux
-    - Chrome version 2.4, on Platform : Windows, Linux
-    - Opera version 0.4, on Platform MacOs
+- Firefox version 1.0, on Platform : Windows, MacOs Linux
+- Chrome version 2.4, on Platform : Windows, Linux
+- Opera version 0.4, on Platform MacOs
 
 Once instances have been created, make a comparison between Firefox and Chrome by equals' method. naturally, both instances are differents
 
@@ -45,7 +45,7 @@ To be sur that you update has been correctly done, display the version.
 
 ### 4) one companion for life
 
-To create a instance of a class, we need to used the `new` operator. Scala propose a mechanism to avoid this operator.
+To create a instance of a class, we need to use the `new` operator. Scala propose a mechanism to avoid this operator.
 For our `Browser` class create the dedicate companion object with the right method to allow instantiation without using the new operator
 
 
