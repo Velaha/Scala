@@ -40,6 +40,8 @@ Note: under some Linux machines *<PATH_JAVA_11>* is `/usr/lib/jvm/java-11-openjd
 
 In this repository, there are multiple `src` placed in different directory `week1_intro`, ... that correspond to sub-modules as defined in `build.sbt`.
 
+Note: compiled classes are generated to `target` directories next to `src`.
+
 ## Validate your setup
 
 To continue, you must have
@@ -105,12 +107,15 @@ sbt:TD Scala> week1_intro/test
 - In interative mode `<project_name>/run` or `<project_name>/test`
 - From batch, `sbt "run"`, `sbt "<project_name>/run"`, ...
 
+Note: the sbt command `scalafmt` format the source code. Scalafmt is an Sbt a plugin (see `project/plugins.sbt`)
+
+## Editor
+We recommand IntelliJ IDE to work on the exercices. To import the project with IntelliJ
+
+> Click File -> new -> import from existing sources
+> and select the build.sbt file
 
 # Next
-
-Before you continue,
-- note that compiled classes have been generated to `/target`
-- you can use the sbt command `scalafmt` (added via a plugin) to format the source code
 
 You are ready to go on!
 
