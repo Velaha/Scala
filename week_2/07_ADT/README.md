@@ -56,8 +56,7 @@ In the package `com.td.scala.adt._3`, there is an object `utils.DB`.
 
 DB provides one method that requires a predicate as parameter.
 
-Your job here is to implement several predicates according the following specifications.
-
+Your job here is to implement several predicates according the following specifications:
  - select all Firefox browsers
  - select all Chrome browsers compliant with Windows platform
  - select all browser with version equals to 1.0
@@ -68,6 +67,6 @@ Your job here is to implement several predicates according the following specifi
 
 ## Summary
 
-In this exercise, we saw that the type system (throught ADT) help us to produce safe code.
+In this exercise, we saw that the type system (throught ADT) helps us to produce safer code.
 
 # End of week 2
