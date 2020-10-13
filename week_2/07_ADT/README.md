@@ -17,14 +17,14 @@ The attributes `Kind` and `Platform` have limited number a possible values.
 
 Let's define better types for them!
 
-`Kind` has following values:
+`Kind` has the following values:
 - Firefox
 - Chrome
 - IE
 - Opera
 - Safari
 
-`Platform` has following values:
+`Platform` has the following values:
 - Windows
 - Linux
 - MacOs
