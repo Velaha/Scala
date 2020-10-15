@@ -5,8 +5,9 @@ object Main extends App {
   val code: String = "Code To Analyse"
   val nb: Int      = 0
 
-  /** implement the method below in recursion fashion. This function must determin if all parenthesis are balanced * */
-  def balance(code: String): Either[String, Int] = ???
+  /** This methdod checks that the parenthesis in the input are balanced */
+  def balance(code: String): Either[String, Int] =
+    ??? // TODO Implement this method with a tail-recursion approach
 
   val result = balance(code).fold(
     msg => "Parenthesis are not balanced",

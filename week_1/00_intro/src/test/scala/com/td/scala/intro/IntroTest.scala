@@ -12,7 +12,7 @@ class IntroTest extends AnyFlatSpec with should.Matchers {
     val stack = new Stack[Int]
     stack.push(1)
     stack.push(2)
-    stack.pop() should be (2)
-    stack.pop() should be (1)
+    stack.pop() should be(2)
+    stack.pop() should be(1)
   }
 }
