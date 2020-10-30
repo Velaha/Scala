@@ -30,7 +30,7 @@ Now we want enhance the Option type by invoking our function directly on the Opt
 
 ### 3) Option[A] + a:A 
 
-Now add a new function that allows to add one option[A] and a simple value of type A
+Now add a new function that allows to add one option[Int] and a simple value of type Int
 
 
 ### 4) Bonus (not mandatory)
