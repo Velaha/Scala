@@ -28,7 +28,7 @@ In exercise above, we implemented functions. Those functions are not directly in
 Now we want enhance the Option type by invoking our function directly on the Option type
 
 
-### 3) Option[A] + a:A 
+### 3) Option[Int] + a:Int 
 
 Now add a new function that allows to add one option[Int] and a simple value of type Int
 
