@@ -19,7 +19,7 @@ You have to fill the implicit parameter and provide an implementation of the Ban
 
 ### 3) Exchange, Exchange...
 
-In Main class, from your bank, make different exchange from EURO to DOLLAR, YEN, your own currency
+In class `Main`, from your bank, make different exchange from EURO to USD, JPN and your own currency
 
 
 ## Summary
