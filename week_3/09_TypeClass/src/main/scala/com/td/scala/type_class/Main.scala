@@ -2,6 +2,6 @@ package com.td.scala.type_class
 
 object Main extends App {
 
-  println(???)
+  println("Run the tests!")
 
 }
