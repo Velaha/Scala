@@ -19,7 +19,7 @@ object converter {
       override val symbol: String = "$"
     }
 
-    case class YEN(amount: Double) extends Currency {
+    case class JPN(amount: Double) extends Currency {
       override val symbol: String = "¥"
     }
 
