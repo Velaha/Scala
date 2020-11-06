@@ -12,7 +12,7 @@ object converter {
   object Currency {
 
     case class EUR(amount: Double) extends Currency {
-      override val symbol: String = "EURO"
+      override val symbol: String = "€"
     }
 
     case class DOL(amount: Double) extends Currency {
@@ -23,7 +23,7 @@ object converter {
       override val symbol: String = "¥"
     }
 
-    // add your own currency
+    // TODO: Add your own currency
   }
 
   trait Converter[A, B] {
@@ -32,7 +32,7 @@ object converter {
 
   object converters {
 
-    // provide implicits converters Currency based on trait converter[A,B]
+    // TODO: Provide implicits converters Currency based on trait converter[A,B]
 
   }
 
