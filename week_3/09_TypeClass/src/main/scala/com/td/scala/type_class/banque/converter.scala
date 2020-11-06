@@ -6,7 +6,7 @@ object converter {
     val amount: Double
     val symbol: String
     def display: String =
-      s"Montant ${amount} $symbol"
+      s"Montant $amount $symbol"
   }
 
   object Currency {
@@ -20,7 +20,7 @@ object converter {
     }
 
     case class YEN(amount: Double) extends Currency {
-      override val symbol: String = "Y"
+      override val symbol: String = "¥"
     }
 
     // add your own currency
