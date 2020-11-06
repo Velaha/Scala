@@ -15,7 +15,7 @@ object converter {
       override val symbol: String = "€"
     }
 
-    case class DOL(amount: Double) extends Currency {
+    case class USD(amount: Double) extends Currency {
       override val symbol: String = "$"
     }
 
