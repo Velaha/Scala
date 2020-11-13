@@ -49,3 +49,5 @@ Note that,
 - `2 + Some(1)` is not valid, why?
 
 Here, we see how, with implicit mechanism, we can help us to enhance a standard type. It could usefull in some case.
+
+[Next](week_3/09_TypeClass/README.md)

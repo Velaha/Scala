@@ -8,5 +8,3 @@ These exercises aim to guide your first steps into the Scala language.
 - Week_4
 
 Under each directories above you will find exercises for the current week.
-
-[Next](week_3/09_TypeClass/README.md)
