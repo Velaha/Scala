@@ -7,18 +7,18 @@ lazy val scalatest = "org.scalatest" %% "scalatest" % "3.2.0" % Test
 
 // week 1
 lazy val week1_intro = (project in file("week_1/00_intro"))
-  .dependsOn(
-    week1_classes,
-    week1_functionalType,
-    week1_functions,
-    week1_recursion,
-    week2_classes,
-    week2_case_classes,
-    week2_ADT,
-    week3_implicits,
-    week3_TypeClass,
-    week4_app
-  )
+  // .dependsOn(
+  //   week1_classes,
+  //   week1_functionalType,
+  //   week1_functions,
+  //   week1_recursion,
+  //   week2_classes,
+  //   week2_case_classes,
+  //   week2_ADT,
+  //   week3_implicits,
+  //   week3_TypeClass,
+  //   week4_app
+  // )
   .settings(libraryDependencies += scalatest)
 
 lazy val week1_classes        = (project in file("week_1/01_Classes")).settings(libraryDependencies += scalatest)
