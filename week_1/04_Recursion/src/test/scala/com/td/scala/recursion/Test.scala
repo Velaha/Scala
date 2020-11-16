@@ -7,37 +7,37 @@ import matchers._
 
 import Assertions._
 
-class Test extends AnyFlatSpec with should.Matchers {
+class BalancingCheckerTest extends AnyFlatSpec with should.Matchers {
 
   "An empty String" should "pass" in {
-    Main.balance("") should be(true)
+    BalancingChecker.isBalanced("") should be(true)
   }
 
   "()" should "pass" in {
-    Main.balance("()") should be(true)
+    BalancingChecker.isBalanced("()") should be(true)
   }
 
   "(())" should "pass" in {
-    Main.balance("(())") should be(true)
+    BalancingChecker.isBalanced("(())") should be(true)
   }
 
   "(" should "fail" in {
-    Main.balance("(") should not be (true) // should not be false == should be true :)
+    BalancingChecker.isBalanced("(") should not be true // should not be false == should be true :)
   }
 
   ")" should "fail" in {
-    Main.balance(")") should be (false)
+    BalancingChecker.isBalanced(")") should be(false)
   }
 
   "()(" should "fail" in {
-    Main.balance("()(") should be (false)
+    BalancingChecker.isBalanced("()(") should be(false)
   }
 
   "(()" should "fail" in {
-    Main.balance("(()") should be (false)
+    BalancingChecker.isBalanced("(()") should be(false)
   }
 
   ")(" should "fail" in {
-    Main.balance(")(") should be (false)
+    BalancingChecker.isBalanced(")(") should be(false)
   }
 }
