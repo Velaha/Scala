@@ -2,7 +2,7 @@ package com.td.scala.functions
 
 import com.td.scala.functions.constructor.CarConstructor.Color
 
-class Car(val nbDoor: Int, val color: Color, val nbPlaces: Int, price: Double = 0.0, val speed: Int = 0) {
+class Car(val nbDoor: Int, val color: Color, val nbPlaces: Int, val price: Double = 0.0, val speed: Int = 0) {
 
   def speedUp(s: Int, turbo: Int => Int = identity[Int]): Either[String, Car] =
     if (s <= 0) {
