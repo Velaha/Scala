@@ -6,12 +6,10 @@ object Main extends App {
   val nb: Int      = 0
 
   /** This methdod checks that the parenthesis in the input are balanced */
-  def balance(code: String): Either[String, Int] =
+  def balance(code: String): Boolean =
     ??? // TODO Implement this method with a tail-recursion approach
 
-  val result = balance(code).fold(
-    msg => "Parenthesis are not balanced",
-    nb => "Congratulation!"
-  )
+  if (balance(code)) "Congratulation!"
+  else "Parenthesis are not balanced"
 
 }
