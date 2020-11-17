@@ -25,6 +25,7 @@ lazy val week1_classes        = (project in file("week_1/01_Classes")).settings(
 lazy val week1_functionalType = (project in file("week_1/02_Functional_Type")).settings(libraryDependencies += scalatest)
 lazy val week1_functions      = (project in file("week_1/03_Functions")).settings(libraryDependencies += scalatest)
 lazy val week1_recursion      = (project in file("week_1/04_Recursion")).settings(libraryDependencies += scalatest)
+lazy val week1_5_either      = (project in file("week_1/05_either")).settings(libraryDependencies += scalatest)
 
 // week 2
 lazy val week2_classes      = (project in file("week_2/05_Classes")).settings(libraryDependencies += scalatest)
