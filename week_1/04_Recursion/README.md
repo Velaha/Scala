@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This exercise aims to implement a recusive function.
+This exercise aims to implement a recursive function.
 
 ## Instructions
 
@@ -12,4 +12,4 @@ This exercise aims to implement a recusive function.
 > Run the Main class
 > Run the tests
 
-That's all folks!
+[Next exercice](../05_either/README.md)
