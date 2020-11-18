@@ -1,6 +1,6 @@
-package com.td.scala.type_class.banque
+package com.td.type_class
 
-import com.td.scala.type_class.banque.converter.Converter
+import com.td.type_class.converter.Converter
 
 trait Bank[B] {
   // TODO uncomment

@@ -1,4 +1,4 @@
-package com.td.scala.type_class.banque
+package com.td.type_class
 
 object converter {
 
