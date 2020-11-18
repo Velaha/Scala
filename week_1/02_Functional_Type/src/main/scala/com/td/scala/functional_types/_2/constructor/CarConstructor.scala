@@ -20,6 +20,10 @@ object CarConstructor {
     override val color: String = "Red"
   }
 
+  case object Rede extends Color {
+    override val color: String = "Red"
+  }
+
   case object Gray extends Color {
     override val color: String = "Gray"
   }

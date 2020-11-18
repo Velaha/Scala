@@ -1,10 +1,12 @@
 package com.td.type_class
 
 import com.td.type_class.converter.Converter
+import com.td.type_class.converter.Currency._
 
 trait Bank[B] {
-  // TODO uncomment
-  // def exchange[A](m: A)(implicit conv: ???): B
+  def exchange[A](m: A)(implicit conv: Converter[A, B]): B
 }
 
-//Create a new bank which able to exchange EURO from
+case class LaNef() extends Bank[EUR] {
+  override def exchange[A](m: A)(implicit conv: Converter[A, EUR]): EUR = conv.change(m)
+}
