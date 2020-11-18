@@ -1,4 +1,4 @@
-package com.td.scala.implicits
+package com.td.implicits
 
 object OptionHelpers {
 

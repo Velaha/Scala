@@ -1,10 +1,10 @@
-package com.td.scala.implicits
+package com.td.implicits
 
 import org.scalatest._
 import flatspec._
 import matchers._
 
-class Test extends AnyFlatSpec with should.Matchers {
+class OptionHelpersTest extends AnyFlatSpec with should.Matchers {
 
   "Naive add" should "add Some + Some" in {
     OptionHelpers.naiveAdd(Some(1), Some(2)) should be(Some(3))
