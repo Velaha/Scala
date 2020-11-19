@@ -18,7 +18,8 @@ lazy val root = (project in file("."))
     week2_ADT,
     week3_implicits,
     week3_TypeClass,
-    week4_app
+    week4_app,
+    week_list_recursion
   )
   .settings(libraryDependencies += scalatest)
 
