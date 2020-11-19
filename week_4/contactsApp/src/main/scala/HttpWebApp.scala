@@ -1,7 +1,7 @@
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model.StatusCodes._
-import akka.http.scaladsl.model.{ContentTypes, StatusCodes}
+import akka.http.scaladsl.model.{ ContentTypes, StatusCodes }
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
 import akka.stream.ActorMaterializer
@@ -12,7 +12,7 @@ import model.Contact
 
 import scala.concurrent.Future
 import scala.io.StdIn
-import scala.util.{Failure, Success, Try}
+import scala.util.{ Failure, Success, Try }
 
 object HttpWebApp extends App with FailFastCirceSupport {
 
@@ -37,16 +37,16 @@ object HttpWebApp extends App with FailFastCirceSupport {
           convert(c) match {
             case Some(_) => complete(OK -> s"Contact ${id} has been deleted with success")
             case None => complete(NotFound -> s"None contact found for ${id}")
-          })
+          }
+        )
       }
-    }~path("api" / "contacts") {
+    } ~ path("api" / "contacts") {
       post {
         entity(as[Contact]) { c: Contact =>
           onComplete(Future(AppContext.contactService.createContact(c)))(contact => complete(OK -> convert(contact).asJson))
         }
       }
     }
-
 
   val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
   println(s"Server online @ http://localhost:8080/\nPress RETURN to stop...")
@@ -60,5 +60,4 @@ object HttpWebApp extends App with FailFastCirceSupport {
       case Failure(_) => throw new Exception("Error")
       case Success(r) => r
     }
-    }
-
+}
