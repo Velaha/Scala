@@ -2,8 +2,7 @@ package com.td.either
 
 import scala.util.{ Failure, Success, Try }
 
-/**
-  * Typesafe wrapper for Scala of Java's JavaDriver library
+/** Typesafe wrapper for Scala of Java's JavaDriver library
   */
 class ScalaDriver() {
   // Provide .asScala on java List
