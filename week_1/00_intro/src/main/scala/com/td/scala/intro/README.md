@@ -4,6 +4,8 @@
 ```bash
 git clone https://gitlab.com/fabszn/td_scala.git
 cd td_scala
+git checkout --branch student
+git checkout student
 ```
 
 ## Install
