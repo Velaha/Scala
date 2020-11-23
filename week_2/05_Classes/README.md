@@ -16,7 +16,7 @@ The class `Browser` has 3 attributes:
 
 - `version`: Double : public immutable
 - `kind`: String : public immutable
-- `platform`: String : public immutable
+- `platform`: Seq[String] : public immutable
 
 and create the follwing instances in `Main.scala`
 - `firefox1`: Firefox version 1.0, on Platform : Windows, MacOs Linux
