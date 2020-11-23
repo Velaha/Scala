@@ -12,4 +12,4 @@ This exercise aims to implement a recursive function.
 > Run the Main class
 > Run the tests
 
-[Next exercice](../05_either/README.md)
+[Next exercice](../mylist/README.md)
