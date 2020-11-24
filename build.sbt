@@ -56,5 +56,6 @@ lazy val week4_app = (project in file("week_4/contactsApp")).settings(
 
 lazy val week_list_recursion = (project in file("week_lists/recursion")).settings(libraryDependencies += scalatest)
 lazy val week_list_mylist = (project in file("week_lists/mylist")).settings(libraryDependencies += scalatest)
+lazy val week_list_bikers = (project in file("week_lists/fold")).settings(libraryDependencies += scalatest)
 
 mappings in (Compile, packageDoc) := Seq()
