@@ -28,7 +28,7 @@ object HttpWebApp extends App with FailFastCirceSupport {
       get {
         onComplete(Future.successful(AppContext.contactService.getContact(id))) { c =>
           convert(c) match {
-            case Some(contact) => complete(OK -> contact.asJson)
+            case Some(contact) => complete(OK -> contact.toString)
             case None => complete(NotFound -> "None contact found")
           }
         }
@@ -43,7 +43,7 @@ object HttpWebApp extends App with FailFastCirceSupport {
     } ~ path("api" / "contacts") {
       post {
         entity(as[Contact]) { c: Contact =>
-          onComplete(Future(AppContext.contactService.createContact(c)))(c => complete(OK -> convert(c).asJson))
+          onComplete(Future(AppContext.contactService.createContact(c)))(c => complete(OK -> convert(c).toString))
         }
       }
     }
