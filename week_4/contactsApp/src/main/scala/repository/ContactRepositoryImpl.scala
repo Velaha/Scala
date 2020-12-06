@@ -19,7 +19,7 @@ class ContactRepositoryImpl extends ContactRepository {
   override def insert(contact: Contact): Contact = {
     val nextId = incrementSequence
     val c      = contact.copy(id = Some(nextId))
-    storage = storage +((nextId, c))
+    storage = storage + ((nextId, c))
     c
   }
 

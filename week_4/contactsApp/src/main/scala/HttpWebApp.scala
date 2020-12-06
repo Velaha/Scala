@@ -46,6 +46,14 @@ object HttpWebApp extends App with FailFastCirceSupport {
           onComplete(Future(AppContext.contactService.createContact(c)))(c => complete(OK -> convert(c).toString))
         }
       }
+    } ~ path("api" / "search") {
+      get {
+        parameters('field, 'value) { (field: String, value: String) =>
+          onComplete(Future(AppContext.contactService.searchContact(field, value)))(contacts =>
+            complete(OK -> convert(contacts).toString)
+          )
+        }
+      }
     }
 
   val bindingFuture = Http().bindAndHandle(route, "localhost", 8080)
