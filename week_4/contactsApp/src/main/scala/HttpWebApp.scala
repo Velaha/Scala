@@ -33,7 +33,7 @@ object HttpWebApp extends App with FailFastCirceSupport {
           }
         }
       } ~ delete {
-        onComplete(Future(AppContext.contactService.suppressionContact(id)))((c: Try[Option[Contact]]) =>
+        onComplete(Future(AppContext.contactService.suppressionContact(id)))(c =>
           convert(c) match {
             case Some(_) => complete(OK -> s"Contact ${id} has been deleted with success")
             case None => complete(NotFound -> s"None contact found for ${id}")
@@ -43,7 +43,7 @@ object HttpWebApp extends App with FailFastCirceSupport {
     } ~ path("api" / "contacts") {
       post {
         entity(as[Contact]) { c: Contact =>
-          onComplete(Future(AppContext.contactService.createContact(c)))(contact => complete(OK -> convert(contact).asJson))
+          onComplete(Future(AppContext.contactService.createContact(c)))(c => complete(OK -> convert(c).asJson))
         }
       }
     }

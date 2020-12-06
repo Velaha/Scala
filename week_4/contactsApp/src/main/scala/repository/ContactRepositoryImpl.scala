@@ -12,14 +12,14 @@ trait ContactRepository {
 }
 
 class ContactRepositoryImpl extends ContactRepository {
-
+  //Only for the TP, don't reproduce this in real life!
   var sequence: Long                      = 0
   var storage: mutable.Map[Long, Contact] = mutable.Map[Long, Contact]()
 
   override def insert(contact: Contact): Contact = {
     val nextId = incrementSequence
     val c      = contact.copy(id = Some(nextId))
-    storage = storage.+((nextId, c))
+    storage = storage +((nextId, c))
     c
   }
 
