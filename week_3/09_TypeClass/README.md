@@ -7,6 +7,8 @@ In this module you have one base code to be fill. Read instructions, it will dri
 
 ## Instructions
 
+Create your own bank `LaNef()`
+
 ### 1) Need converter
 
 Based on the `trait Converter`, implement implicits converters.

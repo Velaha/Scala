@@ -11,6 +11,8 @@ The exercice aims to use implicits
 - Implement the function `naiveAdd` that adds two `Option[Int]`
 - Run the unit tests to validate your work
 
+Note: `None + Some(...)` arbitrary returns None
+
 ### 2) Enhance Option type
 
 The function `naiveAdd` is not a method of `Option[Int]`:
