@@ -46,6 +46,10 @@ object HttpWebApp extends App with FailFastCirceSupport {
           onComplete(Future(AppContext.contactService.createContact(c)))(c => complete(OK -> convert(c).toString))
         }
       }
+    } ~ path("api"/"test") {
+      get {
+        complete(OK -> "it works!!")
+        }
     } ~ path("api" / "search") {
       get {
         parameters('field, 'value) { (field: String, value: String) =>
