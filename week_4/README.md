@@ -9,7 +9,7 @@ The exercice aims to implement features in "real" web application
 To launch the web server:
 
  1) Start sbt
- 2) type `project week_4`
+ 2) type `project week_4_app`
  3) type `run`
 
 From your browser, run the following request :
