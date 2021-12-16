@@ -114,8 +114,8 @@ Note: the sbt command `scalafmt` format the source code. Scalafmt is an Sbt a pl
 ## Editor
 We recommand IntelliJ IDE to work on the exercices. To import the project with IntelliJ
 
-> Click File -> new -> import from existing sources
-> and select the build.sbt file
+> Click File -> open 
+> and select root directory `td_scala`
 
 # Next
 

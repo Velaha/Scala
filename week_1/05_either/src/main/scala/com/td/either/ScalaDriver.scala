@@ -10,7 +10,7 @@ class ScalaDriver() {
 
   private val library = new JavaDriver();
 
-  def find(key: String): Option[String] = ??? 
+  def find(key: String): Option[String] = ???
 
   def find(keys: String*): List[Option[String]] = ???
 
