@@ -12,7 +12,7 @@ This exercise aims to dive in functions (simple, higher-order functions, etc)
 
 > Implement the signatures in `com.td.scala.functions.CarUtilities`
 
-### 2) HOF will help you for composition
+### 2) Hight Order Function will help you for composition
 
 > Once you've implemented all of the functions, implement the missing code that correspond to each description in class `Main`
 

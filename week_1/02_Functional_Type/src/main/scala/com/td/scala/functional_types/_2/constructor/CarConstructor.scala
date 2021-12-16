@@ -57,8 +57,8 @@ object CarConstructor {
     14 -> new Car(5, Red, 2)
   )
 
-  def searchCarById(code: Int): Option[Car] = garage.get(code)
+  def searchCarById(code: Int): Option[Car] = ???
 
-  def searchCarsByColor(c: Color): List[Car] = garage.filter { case (i, car) => car.color == c }.values.toList
+  def searchCarsByColor(c: Color): List[Car] = ???
 
 }
