@@ -1,6 +1,6 @@
 package com.td.case_classes
 
-object Main {
+object Main extends App {
 
   val firefox = Browser(1.0, "Firefox", Seq("Windows", "MacOs", "Linux"))
   val chrome  = Browser(2.4, "Chrome", Seq("Windows", "Linux"))
