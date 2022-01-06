@@ -9,7 +9,7 @@ object Main extends App {
   // implement predicated here
 
   // select all Firefox browsers
-  
+
   //  select all Chrome browsers compliant with Windows platform
 
   // select all browser with version equals to 1.0

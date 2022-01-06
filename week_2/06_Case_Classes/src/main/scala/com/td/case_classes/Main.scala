@@ -10,10 +10,6 @@ object Main {
   println((chrome.equals(chrome)))
 
   //new version of chrome
-  val chrome2_5 = chrome.copy(version = 2.5)
 
-  println(chrome2_5.version)
-
-  val chrome2_6 = Browser(2.6, chrome.kind, chrome.platform)
 
 }
