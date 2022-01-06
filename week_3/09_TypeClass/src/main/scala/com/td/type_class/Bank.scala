@@ -7,6 +7,4 @@ trait Bank[B] {
   def exchange[A](m: A)(implicit conv: Converter[A, B]): B
 }
 
-case class LaNef() extends Bank[EUR] {
-  override def exchange[A](m: A)(implicit conv: Converter[A, EUR]): EUR = conv.change(m)
-}
+// Your bank : LaNef
