@@ -16,26 +16,30 @@ From your browser, run the following request :
 
 `http://localhost:8080/api/test`
 
+You should receive a `HTTP 200` with body equals to `it works!!`
+
 Endpoints availables :
 
+- GET http://localhost:8080/api/contacts/ -> read all contacts
 - GET http://localhost:8080/api/contacts/:id -> read one contact by its id
 - DELETE http://localhost:8080/api/contacts/:id -> delete one contact by its id
 - POST http://localhost:8080/api/contacts/ with payload
-    ```json{
-        "lastName":"Randant",
-        "firstname":"Michel",
-        "mail":"M.randant@mail.com"
-        }
+    ```json
+  {
+     "lastName":"Randant",
+     "firstname":"Michel",
+     "mail":"M.randant@mail.com"
+  }
     ```
 
-  - GET  http://localhost:8080/api/search?field=lastname&value=*** -> `to be implemented
+- GET  http://localhost:8080/api/search?field=lastname&value=*** -> `to be implemented
 
 
 ## Instructions
 
 ### 1) JsonFormat
 
-Data format of HTTP endpoints are in JSON.
+Standard data format of HTTP endpoints is JSON format.
 Currently, a simple access to the `toString` method is used to convert Contact instance to serializable representation
 
 - We have to find a general solution to format a Contact case class instance.
@@ -60,8 +64,9 @@ Now we want to add a new feature : search engine that aims to find a contact by 
 }
 
 This endpoint expects two parameters in queryString : `field` and `value`. These parameters are the search criterias.
-Field : contains the field on the search will be run, Value : contains the information that we are searching
+ - Field : contains the field on the search will be run, 
+ - Value : contains the information that we are searching
 
-- Implementation must be done in `ContactService` class.
-- Implentation must rely on `ConctactRepository` class.
-- No strict constraints is required here, you have to code efficient solution based on the type system
+ - Implementation must be done in `ContactService` class.
+ - Implentation must rely on `ConctactRepository` class.
+ - No strict constraints is required here, you have to code efficient solution based on the type system
