@@ -12,7 +12,7 @@ Create your own bank `LaNef()`
 ### 1) Need converter
 
 Based on the `trait Converter`, implement implicits converters.
-Converter defined an exchange between two currencies with a fixed rate (in our case).
+Converter defined one exchange between two currencies with a fixed rate (in our case).
 
 ### 2) Fill Bank trait implementation
 

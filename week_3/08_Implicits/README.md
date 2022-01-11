@@ -24,9 +24,10 @@ Example
 ```scala
 val option: Option[Int] = ???
 option.plus(None)
+option.plus(Some(3))
 ```
 
-is valid
+Code above should be valid.
 
 ### 3) Option[Int] + a: Int
 
