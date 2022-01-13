@@ -18,8 +18,10 @@ lazy val root = (project in file("."))
     week2_ADT,
     week3_implicits,
     week3_TypeClass,
-    week4_app,
-    week_list_recursion
+    week5_app,
+    week4_recursion,
+    week4_bikers,
+    week4_mylist
   )
   .settings(libraryDependencies += scalatest)
 
@@ -31,6 +33,7 @@ lazy val week1_functions      = (project in file("week_1/03_Functions")).setting
 lazy val week1_recursion      = (project in file("week_1/04_Recursion")).settings(libraryDependencies += scalatest)
 lazy val week1_5_either       = (project in file("week_1/05_either")).settings(libraryDependencies += scalatest)
 
+
 // week 2
 lazy val week2_classes      = (project in file("week_2/05_Classes")).settings(libraryDependencies += scalatest)
 lazy val week2_case_classes = (project in file("week_2/06_Case_Classes")).settings(libraryDependencies += scalatest)
@@ -41,7 +44,7 @@ lazy val week3_implicits = (project in file("week_3/08_Implicits")).settings(lib
 lazy val week3_TypeClass = (project in file("week_3/09_TypeClass")).settings(libraryDependencies += scalatest)
 
 // week 4
-lazy val week4_app = (project in file("week_4/contactsApp")).settings(
+lazy val week5_app = (project in file("week_5/contactsApp")).settings(
   libraryDependencies ++= Seq(
     "com.typesafe.akka" %% "akka-http"       % "10.1.11",
     "com.typesafe.akka" %% "akka-stream"     % "2.5.26",
@@ -54,8 +57,10 @@ lazy val week4_app = (project in file("week_4/contactsApp")).settings(
   )
 )
 
-lazy val week_list_recursion = (project in file("week_lists/recursion")).settings(libraryDependencies += scalatest)
-lazy val week_list_mylist = (project in file("week_lists/mylist")).settings(libraryDependencies += scalatest)
-lazy val week_list_bikers = (project in file("week_lists/fold")).settings(libraryDependencies += scalatest)
+lazy val week4_recursion = (project in file("week_4/recursion")).settings(libraryDependencies += scalatest)
+lazy val week4_mylist = (project in file("week_4/mylist")).settings(libraryDependencies += scalatest)
+lazy val week4_bikers = (project in file("week_4/fold")).settings(libraryDependencies += scalatest)
+
+
 
 mappings in (Compile, packageDoc) := Seq()
