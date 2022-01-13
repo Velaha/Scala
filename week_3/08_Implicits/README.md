@@ -15,7 +15,7 @@ Note: `None + Some(...)` arbitrary returns None
 
 ### 2) Enhance Option type
 
-The function `naiveAdd` is not a method of `Option[Int]`:
+The method `naiveAdd` is not a member of `Option[Int]`:
 
 - Enhance `Option[Int]` type by invoking our function directly on the `Option` type
 
