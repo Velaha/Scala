@@ -35,7 +35,7 @@ Code above should be valid.
 
 ```scala
 val option: Option[Int] = ???
-option plus 2
+option + 2
 ```
 
 ### 4) Bonus (not mandatory)
