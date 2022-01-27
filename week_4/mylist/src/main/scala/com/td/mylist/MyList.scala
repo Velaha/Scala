@@ -1,47 +1,34 @@
 package com.td.mylist
 
 sealed abstract class MyList[+A] {
-  def isEmpty(): Boolean = this == End
+  def isEmpty(): Boolean = ???
 
   // example of using inheritance style
   def length: Int
 
   // Tyepsafe
-  def firstElement: Option[A] = this match {
-    case End => None
-    case Element(value, next) => Some(value)
-  }
+  def firstElement: Option[A] = ???
 
-  def remainingElements: MyList[A] = this match {
-    case End => End
-    case Element(value, next) => next
-  }
+  def remainingElements: MyList[A] = ???
 
   // example of abstract implementation
-  def toPrint: String = this match {
-    case End => ""
-    case Element(value, End) => s"$value"
-    case Element(value, next) => s"$value, ${next.toPrint}"
-  }
+  def toPrint: String = ???
 
   def map[B](f: A => B): MyList[B]
 
-  def addElement[B >: A](a: B): MyList[A] = this match {
-    case End => Element(a, End).asInstanceOf[MyList[A]]
-    case xs @ Element(value, next) => Element(a, xs).asInstanceOf[MyList[A]]
-  }
+  def addElement[B >: A](a: B): MyList[A] = ???
 }
 
 case object End extends MyList[Nothing] {
-  def length: Int = 0
+  def length: Int = ???
 
   // Nothing makes very clear that there is nothing to map
-  def map[B](f: Nothing => B): MyList[B] = End
+  def map[B](f: Nothing => B): MyList[B] = ???
 }
 
 case class Element[T](value: T, next: MyList[T]) extends MyList[T] {
-  def length: Int                  = 1 + next.length
-  def map[B](f: T => B): MyList[B] = Element(f(value), next.map(f))
+  def length: Int                  = ???
+  def map[B](f: T => B): MyList[B] = ???
 }
 
 // Companion object
