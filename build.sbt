@@ -1,4 +1,4 @@
-scalaVersion in ThisBuild := "2.12.12"
+scalaVersion in ThisBuild := "2.13.10"
 
 name := "TD Scala"
 organization := "com.td.scala"

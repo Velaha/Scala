@@ -1,5 +1,5 @@
-import repository.{ ContactRepository, ContactRepository }
-import service.{ ContactService, ContactService }
+import repository.ContactRepository
+import service.ContactService
 
 object AppContext {
   private val contactRepository: ContactRepository = new ContactRepository()
