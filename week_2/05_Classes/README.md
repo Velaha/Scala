@@ -34,8 +34,9 @@ The instances are different
 
 > Make a comparison between chrome1 and chrome2
 
-What do you notice? What can we do to improve this behavior ? (What would you do in Java?)
+**What do you notice? What can we do to improve this behavior ? (What would you do in Java?)**  
 
+The instance are also different. To change that, we can override the `equals` method, as in Java.  
 
 ### 3) New version
 

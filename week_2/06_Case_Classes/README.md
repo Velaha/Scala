@@ -40,7 +40,8 @@ The instances are different
 
 > Make a comparison between chrome1 and chrome2
 
-What do you notice?
+**What do you notice?**  
+It behaves the right way, no need to override `toString`.  
 
 We will see here that the behavior of _case classes_ is different than _classes_. If you need the same semantic than _classes_, you can use the `eq` and `ne` methods. Both methods are based on reference comparison
 
