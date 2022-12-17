@@ -34,9 +34,18 @@ object converter {
   }
 
   object converters {
+    import Currency._
 
-    ???
+    implicit object FromDollarToEuro extends Converter[USD, EUR] {
+      override def change(amount: USD): EUR = EUR(amount.amount * 0.94)
+    }
 
+    implicit object FromYenToEuro extends Converter[JPN, EUR] {
+      override def change(amount: JPN): EUR = EUR(amount.amount * 0.0069)
+    }
+
+    implicit object FromPoundToEuro extends Converter[PND, EUR] {
+      override def change(amount: PND): EUR = EUR(amount.amount * 1.15)
+    }
   }
-
 }
